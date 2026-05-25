@@ -45,6 +45,8 @@ padding:25px;
 
 border-radius:10px;
 
+overflow-x:auto;
+
 width:90%;
 
 max-width:700px;
@@ -99,7 +101,7 @@ width:100%;
 
 border-collapse:collapse;
 
-table-layout:auto;   /* ajusta ancho según contenido */
+table-layout:fixed;     /* distribuye ancho */
 
 font-size:14px;
 
@@ -113,38 +115,81 @@ border:1px solid white;
 
 padding:10px;
 
-white-space:nowrap;      /* evita cortar números */
-
-overflow:hidden;
-
-text-overflow:ellipsis;
-
 vertical-align:middle;
 
-}
+word-wrap:break-word;
 
-
-/* Permite saltos solo en texto largo */
-
-td:nth-child(3),
-td:nth-child(4),
-td:nth-child(6){
-
-white-space:normal;
-word-break:break-word;
-
-}
-
-  td:nth-child(1),
-td:nth-child(2){
-
-font-weight:bold;
-
-min-width:90px;
+overflow-wrap:break-word;
 
 text-align:center;
 
 }
+
+  /* DNI */
+
+th:nth-child(1),
+td:nth-child(1){
+
+width:10%;
+
+white-space:nowrap;
+
+}
+
+
+/* SUMINISTRO */
+
+th:nth-child(2),
+td:nth-child(2){
+
+width:12%;
+
+white-space:nowrap;
+
+}
+
+
+/* NOMBRE */
+
+th:nth-child(3),
+td:nth-child(3){
+
+width:22%;
+
+}
+
+
+/* BENEFICIARIO */
+
+th:nth-child(4),
+td:nth-child(4){
+
+width:22%;
+
+}
+
+
+/* ESTADO */
+
+th:nth-child(5),
+td:nth-child(5){
+
+width:10%;
+
+white-space:nowrap;
+
+}
+
+
+/* OBSERVACIONES */
+
+th:nth-child(6),
+td:nth-child(6){
+
+width:24%;
+
+}
+
 
 th{
 
