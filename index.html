@@ -95,15 +95,11 @@ background:#0056b3;
 
 table{
 
-margin-top:20px;
-
 width:100%;
 
+table-layout:fixed;
+
 border-collapse:collapse;
-
-table-layout:fixed;     /* distribuye ancho */
-
-font-size:14px;
 
 }
 
@@ -125,12 +121,14 @@ text-align:center;
 
 }
 
-  /* DNI */
+/* DNI */
 
 th:nth-child(1),
 td:nth-child(1){
 
-width:10%;
+width:11%;
+
+font-weight:bold;
 
 white-space:nowrap;
 
@@ -142,7 +140,9 @@ white-space:nowrap;
 th:nth-child(2),
 td:nth-child(2){
 
-width:12%;
+width:13%;
+
+font-weight:bold;
 
 white-space:nowrap;
 
@@ -154,12 +154,12 @@ white-space:nowrap;
 th:nth-child(3),
 td:nth-child(3){
 
-width:22%;
+width:23%;
 
 }
 
 
-/* BENEFICIARIO */
+/* TIPO BENEFICIARIO */
 
 th:nth-child(4),
 td:nth-child(4){
@@ -169,12 +169,12 @@ width:22%;
 }
 
 
-/* ESTADO */
+/* ESTADO FISE */
 
 th:nth-child(5),
 td:nth-child(5){
 
-width:10%;
+width:12%;
 
 white-space:nowrap;
 
@@ -186,7 +186,7 @@ white-space:nowrap;
 th:nth-child(6),
 td:nth-child(6){
 
-width:24%;
+width:19%;
 
 }
 
@@ -194,6 +194,14 @@ width:24%;
 th{
 
 background:#004080;
+
+font-size:14px;
+
+padding:12px 8px;
+
+word-break:break-word;
+
+white-space:normal;
 
 }
 
