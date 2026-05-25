@@ -99,21 +99,52 @@ width:100%;
 
 border-collapse:collapse;
 
+table-layout:auto;   /* ajusta ancho según contenido */
+
 font-size:14px;
 
 }
 
 
-th,td{
+th,
+td{
 
 border:1px solid white;
 
 padding:10px;
 
+white-space:nowrap;      /* evita cortar números */
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+vertical-align:middle;
+
+}
+
+
+/* Permite saltos solo en texto largo */
+
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(6){
+
+white-space:normal;
 word-break:break-word;
 
 }
 
+  td:nth-child(1),
+td:nth-child(2){
+
+font-weight:bold;
+
+min-width:90px;
+
+text-align:center;
+
+}
 
 th{
 
